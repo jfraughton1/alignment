@@ -1,16 +1,21 @@
+
+
 body {
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     font-size: 100%;
 }
 
 header,
-section {
+section,
+footer {
     width: 960px;
     margin: 0 auto;
 }
 
 h1 {
+    background-color: rgb(200,200,200);
+    text-align: center;
     font-size: 48px;
     margin: 24px 0;
 }
@@ -20,12 +25,13 @@ h2 {
 }
 
 /* *********** form ************ */
-form {
-    margin: 48px;
-}
 
 legend {
-    font-size: 24px;
+    font-size: 32px;
+}
+
+h2, legend {
+    margin-bottom: 1rem;
 }
 
 input {
@@ -38,7 +44,87 @@ button {
     cursor: pointer;
 }
 
+form {
+    width: 50%;
+}
+
+
+
+section {
+    display: flex;
+
+}
+
+section > * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.title-and-paragraph-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+
+.first-flexbox .second-flexbox, .third-flexbox {
+    display: flex;
+    flex-direction: row;
+    
+}
+.username-field, .password-field {
+    width: 50%;
+}
+
+.first-flexbox {
+    display: flex;
+}
+
+.third-flexbox {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.third-flexbox > * {
+    width: 43%
+}
+
+.third-flexbox a {
+    margin-left: 2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+button {
+    margin-right: 1rem;
+}
+
+
 /* ************** footer *************** */
+footer {
+    background-color: rgb(200,200,200);
+    margin-top: 5rem;
+    padding: 1rem 0;
+}
+
 footer li {
     display: inline;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+ul { 
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 30%;
 }
